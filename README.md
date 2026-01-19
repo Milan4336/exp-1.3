@@ -22,3 +22,8 @@ I focused on creating a clear, easy-to-understand layout without complex mobile 
     * I added two interactive buttons using basic JavaScript:
         1. **Counter:** Increases the number of views when clicked.
         2. **Status Toggle:** Changes text from "Online" to "Offline" and changes the text color.
+
+## 4. Learning Outcomes
+1. Learned to construct structured 2D web layouts using CSS Grid properties like `grid-template-columns`.
+2. Understood how to manipulate the DOM with JavaScript to toggle CSS classes for dynamic theme switching.
+3. Gained practical experience in using CSS variables to efficiently manage color schemes across light and dark modes.
