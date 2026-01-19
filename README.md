@@ -1,4 +1,4 @@
-# Experiment: Admin Dashboard with CSS Grid & Theme Switching
+# Experiment: Basic Admin Dashboard with CSS Grid
 
 ## 1. Personal Information
 * **Name:** Milan Jindal
@@ -10,23 +10,15 @@
 
 ## 3. My Defined Approach
 
-To complete this experiment, I focused on writing clean, beginner-friendly code that keeps structure, style, and logic separate but easy to understand.
+I focused on creating a clear, easy-to-understand layout without complex mobile code.
 
-* **Structure (HTML):**
-    * I used a main container `div` to hold everything.
-    * Inside, I divided the page into three main sections: Sidebar (navigation), Header (top bar), and Content (main area).
-    * I used standard semantic tags like `div`, `h3`, and `button` to keep the markup simple.
+* **Grid Layout:** * I used `display: grid` with `grid-template-columns: 200px 1fr` to create a fixed sidebar and a flexible main area.
+    * The main content area also uses grid to align the cards in a row (`repeat(3, 1fr)`).
 
-* **Layout (CSS Grid):**
-    * I used `display: grid` on the main container.
-    * I defined columns using `220px 1fr` (fixed sidebar, flexible content) and rows using `60px 1fr` (fixed header, flexible content).
-    * This ensures the layout stays stable even when the screen size changes.
-
-* **Dynamic Theme Switching (JavaScript):**
-    * Instead of complex CSS variables, I used a class-based approach.
-    * I defined a specific CSS class `.dark-mode` that overrides the background and text colors.
-    * I wrote a simple JavaScript function `toggleTheme()` that toggles this class on the `<body>` element when the button is clicked.
+* **Theme Switching:** * I used CSS variables (`--bg-color`) to store colors.
+    * A simple JavaScript function `toggleTheme()` swaps the class `dark-mode` on the body, which updates these variables instantly.
 
 * **Interactivity:**
-    * I added a `selectMenu()` function that highlights the active menu item by adding/removing an `.active` class.
-    * I implemented a `addVisitor()` function using `parseInt()` to demonstrate basic DOM manipulation and data updating.
+    * I added two interactive buttons using basic JavaScript:
+        1. **Counter:** Increases the number of views when clicked.
+        2. **Status Toggle:** Changes text from "Online" to "Offline" and changes the text color.
